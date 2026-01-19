@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hannah C. Alfaro's Project Portfolio - Explore comprehensive case studies showcasing technical expertise, problem-solving approaches, and practical application of development skills across academic and personal projects.">
+    <meta name="keywords"
+        content="Hannah Alfaro Projects, Web Development Portfolio, React Projects, Python Projects, JavaScript Applications, Technical Case Studies, Code Samples">
+    <meta name="author" content="Hannah C. Alfaro">
+    <title>Projects - Hannah C. Alfaro | Developer Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="module" async
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhannahpor9090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-surface/95 backdrop-blur-sm shadow-subtle z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-2 group">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-surface font-headline font-bold text-xl">H</span>
+                    </div>
+                    <span class="font-headline font-bold text-xl text-text-primary hidden sm:block">Hannah C.
+                        Alfaro</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="reflection.html" class="nav-link">Reflection</a>
+                    <a href="homepage.html#contact" class="btn btn-primary">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-text-secondary hover:text-primary-500 transition-colors"
+                    aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-accent-300">
+            <div class="container-custom py-4 flex flex-col gap-4">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="reflection.html" class="nav-link">Reflection</a>
+                <a href="homepage.html#contact" class="btn btn-primary w-full">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <div
+                    class="inline-flex items-center gap-2 bg-secondary-50 text-secondary-700 px-4 py-2 rounded-full mb-6">
+                    <i data-lucide="folder-open" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Portfolio Showcase</span>
+                </div>
+
+                <h1 class="font-headline font-bold text-text-primary mb-6">
+                    My <span class="text-gradient">Projects</span>
+                </h1>
+
+                <p class="text-lg text-text-muted mb-8 leading-relaxed max-w-2xl mx-auto">
+                    A collection of projects that demonstrate my technical skills, problem-solving approach, and
+                    continuous learning journey. Each project represents a unique challenge and learning opportunity.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-primary-500 mb-1" id="total-projects">6</div>
+                        <div class="text-sm text-text-muted">Total Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-secondary-600 mb-1">10+</div>
+                        <div class="text-sm text-text-muted">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-accent-600 mb-1">2024</div>
+                        <div class="text-sm text-text-muted">Active Year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Section -->
+    <section class="pb-12 bg-surface">
+        <div class="container-custom">
+            <div class="max-w-6xl mx-auto">
+                <!-- Search Bar -->
+                <div class="mb-6 fade-in">
+                    <div class="relative">
+                        <i data-lucide="search"
+                            class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-muted"></i>
+                        <input type="text" id="project-search"
+                            placeholder="Search projects by name, technology, or description..."
+                            class="input pl-12 pr-12" aria-label="Search projects">
+                        <button id="clear-search"
+                            class="absolute right-4 top-1/2 transform -translate-y-1/2 text-text-muted hover:text-primary-500 transition-colors hidden"
+                            aria-label="Clear search">
+                            <i data-lucide="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="flex flex-wrap items-center gap-4 fade-in stagger-delay-1">
+                    <!-- Category Filter -->
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="filter" class="w-5 h-5 text-text-secondary"></i>
+                        <span class="text-sm font-medium text-text-secondary">Filter:</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <button class="filter-btn active" data-category="all">
+                            All Projects
+                        </button>
+                        <button class="filter-btn" data-category="academic">
+                            Academic
+                        </button>
+                        <button class="filter-btn" data-category="personal">
+                            Personal
+                        </button>
+                    </div>
+
+                    <!-- Sort Options -->
+                    <div class="ml-auto flex items-center gap-2">
+                        <span class="text-sm font-medium text-text-secondary">Sort by:</span>
+                        <select id="sort-select" class="input py-2 px-3 text-sm" aria-label="Sort projects">
+                            <option value="recent">Most Recent</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="name">Name (A-Z)</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button id="reset-filters" class="btn btn-ghost text-sm py-2 px-4 hidden">
+                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                        <span>Reset</span>
+                    </button>
+                </div>
+
+                <!-- Active Filters Display -->
+                <div id="active-filters" class="mt-4 flex flex-wrap gap-2 hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section">
+        <div class="container-custom">
+            <div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be dynamically inserted here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="w-24 h-24 mx-auto mb-6 bg-accent-100 rounded-full flex items-center justify-center">
+                    <i data-lucide="search-x" class="w-12 h-12 text-accent-600"></i>
+                </div>
+                <h3 class="font-headline font-semibold text-2xl text-text-primary mb-3">No Projects Found</h3>
+                <p class="text-text-muted mb-6">Try adjusting your search or filters to find what you're looking for.
+                </p>
+                <button id="clear-all-filters" class="btn btn-secondary">
+                    <i data-lucide="rotate-ccw" class="w-5 h-5"></i>
+                    <span>Clear All Filters</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal"
+        class="fixed inset-0 bg-text-primary/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-surface rounded-2xl shadow-strong max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300"
+                id="modal-content">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="card bg-gradient-to-br from-primary-50 to-secondary-50 border-2 border-accent-300 text-center">
+                    <div
+                        class="w-16 h-16 mx-auto mb-6 bg-primary-500 rounded-xl flex items-center justify-center shadow-glow">
+                        <i data-lucide="code-2" class="w-8 h-8 text-surface"></i>
+                    </div>
+
+                    <h2 class="font-headline font-bold text-text-primary mb-4">Want to See More?</h2>
+                    <p class="text-lg text-text-muted mb-8 max-w-2xl mx-auto">
+                        These projects represent my journey in software development. I'm always working on new
+                        challenges and expanding my technical skills.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="mailto:alfaroh.nn.h@gmail.com"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannah-alfaro-2940b6359/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/hxnnhlfr" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-surface py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                            <span class="text-surface font-headline font-bold text-xl">H</span>
+                        </div>
+                        <span class="font-headline font-bold text-xl">Hannah C. Alfaro</span>
+                    </div>
+                    <p class="text-surface/70">
+                        Bridging leadership and technology to create meaningful impact.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="about.html" class="text-surface/70 hover:text-surface transition-colors">About</a>
+                        <a href="skills.html" class="text-surface/70 hover:text-surface transition-colors">Skills</a>
+                        <a href="projects.html"
+                            class="text-surface/70 hover:text-surface transition-colors">Projects</a>
+                        <a href="reflection.html"
+                            class="text-surface/70 hover:text-surface transition-colors">Reflection</a>
+                    </div>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="mailto:hannah.alfaro@example.com"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/hannah-alfaro" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/hannah-alfaro" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-surface/20 pt-8 text-center text-surface/70">
+                <p>&copy; 2025 Hannah C. Alfaro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Project Data
+        const projectsData = [
+            {
+                id: 1,
+                title: "Clinic Inventory Management",
+                category: "academic",
+                date: "2025-3-15",
+                duration: "1 month",
+                shortDescription: "A simple web app to track and manage clinic inventory efficiently.",
+                fullDescription: "A web application designed to help a clinic manage medical and dental supplies. Users can add, update, and monitor stock levels. The system shows available items, low stock alerts, and provides an organized overview for easier inventory management.",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vtPKug751lKjdouT9NYBjDDllZxLt5wgfA&s",
+                imageAlt: "Clinicore - Clinic Inventory Management System",
+                technologies: ["Visual Basic", "MySQL", "Figma"],
+                challenges: [
+                    "Keeping track of all items easily",
+                    "Making the interface simple to use",
+                    "Saving data without a backend"
+                ],
+                solutions: [
+                    "Created clear categories for supplies",
+                    "Designed a clean and simple dashboard",
+                    "Used Local Storage to save data on the browser"
+                ],
+                outcomes: [
+                    "Easier inventory tracking for the clinic",
+                    "All items organized in one place",
+                    "Positive feedback on simple design"
+                ],
+                lessonsLearned: [
+                    "Simple interfaces are often the most effective",
+                    "Organizing data properly makes management easier",
+                    "Even without a backend, local storage can store important data"
+                ]
+            },
+            {
+                id: 2,
+                title: "Responsive Portfolio Website",
+                category: "academic",
+                date: "2026-1-19",
+                duration: "3 days",
+                shortDescription: "Modern, mobile-first portfolio website with smooth animations and interactive elements.",
+                fullDescription: "A personal portfolio website designed to showcase my development journey and projects. Built with a mobile-first approach, the site features smooth scroll animations, interactive project cards, and a responsive navigation system. The design emphasizes clean aesthetics while maintaining excellent performance across all devices.",
+                image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800",
+                imageAlt: "Responsive portfolio website design displayed on multiple devices including desktop, tablet, and mobile, showcasing modern web development techniques and clean interface",
+                technologies: ["HTML5", "Tailwind CSS", "JavaScript"],
+                challenges: [
+                    "Making animations smooth without slowing the site",
+                    "Keeping the site consistent on different browsers",
+                    "Optimizing images while keeping quality"
+                ],
+                solutions: [
+                    "Used efficient scroll animations",
+                    "Applied CSS tricks for faster performance",
+                    "Used modern image formats like WebP"
+                ],
+                outcomes: [
+                    "Site runs fast and smooth"
+                ],
+                lessonsLearned: [
+                    "Design for mobile first",
+                    "Performance matters for users",
+                    "Accessibility is important for everyone"
+                ]
+            },
+            {
+                id: 3,
+                title: "Beach Resort Reservation System",
+                category: "personal",
+                date: "2023-10-01",
+                duration: "2 months",
+                shortDescription: "A web application that streamlines booking and managing reservations for a beach resort",
+                fullDescription: "This system allows users to view available rooms, make reservations, and manage bookings online. Features include a real-time availability calendar, customer account management, reservation confirmation emails, and admin controls for managing rooms, rates, and special offers. The application aims to simplify the booking process and enhance customer experience.",
+                image: "https://scontent-mnl3-3.xx.fbcdn.net/v/t39.30808-6/482322661_1037078645104858_2102800620161643140_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG6BgAUwAcgr5vKsaJsL9luuGpEixYDugu4akSLFgO6C6azpORqQmMKnFoxUgZtu5I8xnNSlc0m6k82U7MbkHhX&_nc_ohc=TNiu8ebXSNEQ7kNvwHJaGdx&_nc_oc=AdkcnMBZ_qhFPGVMe-sKytenr_ASw0Zk2_bml_fsO7VhvwJERbL0dNbmBFkoCtnzGN4&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_gid=7rLWXfdrqSAkgbUskQ3aIw&oh=00_Afo6DrBWmtkFMM97lvzC4ewPHc2Nd0a_peQyUTyw5n2TPg&oe=69735F18",
+                imageAlt: "Vista Dal Mare Beach Resort",
+                technologies: ["JavaScript", "HTML5", "CSS3"],
+                challenges: [
+                    "Managing real-time availability to prevent double bookings",
+                    "Implementing user authentication and secure account management",
+                    "Designing an intuitive booking interface for users"
+                ],
+                solutions: [
+                    "Used Firebase Realtime Database to sync reservations instantly",
+                    "Implemented Firebase Authentication for secure login and registration",
+                    "Applied Bootstrap components and responsive design for a clean, user-friendly interface"
+                ],
+                outcomes: [
+                    "Reduced booking errors and improved customer satisfaction",
+                    "Admin can efficiently manage rooms and reservations",
+                    "Positive user feedback on simplicity and ease of use"
+                ],
+                lessonsLearned: [
+                    "Real-time databases are crucial for reservation systems",
+                    "User experience and interface design significantly impact adoption",
+                    "Security and authentication are essential when handling user accounts"
+                ]
+            }
+        ];
+
+        // DOM Elements
+        const projectsContainer = document.getElementById('projects-container');
+        const projectSearch = document.getElementById('project-search');
+        const clearSearch = document.getElementById('clear-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const sortSelect = document.getElementById('sort-select');
+        const resetFilters = document.getElementById('reset-filters');
+        const activeFiltersContainer = document.getElementById('active-filters');
+        const noResults = document.getElementById('no-results');
+        const clearAllFilters = document.getElementById('clear-all-filters');
+        const projectModal = document.getElementById('project-modal');
+        const modalContent = document.getElementById('modal-content');
+        const totalProjectsEl = document.getElementById('total-projects');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // State
+        let currentFilter = 'all';
+        let currentSort = 'recent';
+        let searchQuery = '';
+        let filteredProjects = [...projectsData];
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        // Initialize
+        function init() {
+            renderProjects();
+            setupEventListeners();
+            updateTotalProjects();
+        }
+
+        // Setup Event Listeners
+        function setupEventListeners() {
+            // Search
+            projectSearch.addEventListener('input', handleSearch);
+            clearSearch.addEventListener('click', clearSearchInput);
+
+            // Filters
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', handleFilter);
+            });
+
+            // Sort
+            sortSelect.addEventListener('change', handleSort);
+
+            // Reset
+            resetFilters.addEventListener('click', resetAllFilters);
+            clearAllFilters.addEventListener('click', resetAllFilters);
+
+            // Modal
+            projectModal.addEventListener('click', (e) => {
+                if (e.target === projectModal) {
+                    closeModal();
+                }
+            });
+
+            // Close modal on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !projectModal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        }
+
+        // Handle Search
+        function handleSearch(e) {
+            searchQuery = e.target.value.toLowerCase();
+            clearSearch.classList.toggle('hidden', searchQuery === '');
+            filterAndRenderProjects();
+            updateActiveFilters();
+        }
+
+        // Clear Search Input
+        function clearSearchInput() {
+            projectSearch.value = '';
+            searchQuery = '';
+            clearSearch.classList.add('hidden');
+            filterAndRenderProjects();
+            updateActiveFilters();
+        }
+
+        // Handle Filter
+        function handleFilter(e) {
+            const category = e.target.dataset.category;
+            currentFilter = category;
+
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+
+            filterAndRenderProjects();
+            updateActiveFilters();
+        }
+
+        // Handle Sort
+        function handleSort(e) {
+            currentSort = e.target.value;
+            filterAndRenderProjects();
+        }
+
+        // Filter and Render Projects
+        function filterAndRenderProjects() {
+            // Filter by category
+            filteredProjects = currentFilter === 'all'
+                ? [...projectsData]
+                : projectsData.filter(project => project.category === currentFilter);
+
+            // Filter by search query
+            if (searchQuery) {
+                filteredProjects = filteredProjects.filter(project => {
+                    const searchableText = `${project.title} ${project.shortDescription} ${project.technologies.join(' ')}`.toLowerCase();
+                    return searchableText.includes(searchQuery);
+                });
+            }
+
+            // Sort projects
+            filteredProjects.sort((a, b) => {
+                switch (currentSort) {
+                    case 'recent':
+                        return new Date(b.date) - new Date(a.date);
+                    case 'oldest':
+                        return new Date(a.date) - new Date(b.date);
+                    case 'name':
+                        return a.title.localeCompare(b.title);
+                    default:
+                        return 0;
+                }
+            });
+
+            renderProjects();
+        }
+
+        // Render Projects
+        function renderProjects() {
+            projectsContainer.innerHTML = '';
+
+            if (filteredProjects.length === 0) {
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+
+            filteredProjects.forEach((project, index) => {
+                const projectCard = createProjectCard(project, index);
+                projectsContainer.appendChild(projectCard);
+            });
+
+            lucide.createIcons();
+            animateCards();
+        }
+
+        // Create Project Card
+        function createProjectCard(project, index) {
+            const card = document.createElement('div');
+            card.className = 'card-interactive scale-in opacity-0';
+            card.style.animationDelay = `${index * 100}ms`;
+            card.dataset.projectId = project.id;
+
+            const categoryBadge = project.category === 'academic'
+                ? '<span class="badge badge-primary">Academic</span>'
+                : '<span class="badge badge-secondary">Personal</span>';
+
+            card.innerHTML = `
+                <div class="relative h-48 mb-4 rounded-lg overflow-hidden group">
+                    <img 
+                        src="${project.image}" 
+                        alt="${project.imageAlt}"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop'; this.onerror=null;"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-text-primary/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        ${categoryBadge}
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center shadow-medium hover:shadow-strong transition-shadow" onclick="openProjectModal(${project.id})" aria-label="View project details">
+                            <i data-lucide="maximize-2" class="w-5 h-5 text-primary-500"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">${project.title}</h3>
+                
+                <p class="text-text-muted mb-4 line-clamp-2">${project.shortDescription}</p>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    ${project.technologies.slice(0, 3).map(tech =>
+                `<span class="badge badge-secondary text-xs">${tech}</span>`
+            ).join('')}
+                    ${project.technologies.length > 3 ?
+                    `<span class="badge badge-secondary text-xs">+${project.technologies.length - 3}</span>`
+                    : ''}
+                </div>
+
+                <div class="flex items-center justify-between pt-4 border-t border-accent-200">
+                    <span class="text-sm text-text-muted flex items-center gap-1">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        ${formatDate(project.date)}
+                    </span>
+                    <div class="flex gap-2">
+                        ${project.liveUrl !== 'javascript:void(0)' ?
+                    `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-primary-50 hover:bg-primary-100 rounded-lg flex items-center justify-center transition-colors" aria-label="View live demo">
+                                <i data-lucide="external-link" class="w-4 h-4 text-primary-500"></i>
+                            </a>`
+                    : ''}
+                        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-secondary-50 hover:bg-secondary-100 rounded-lg flex items-center justify-center transition-colors" aria-label="View GitHub repository">
+                            <i data-lucide="github" class="w-4 h-4 text-secondary-600"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            card.addEventListener('click', (e) => {
+                if (!e.target.closest('a') && !e.target.closest('button')) {
+                    openProjectModal(project.id);
+                }
+            });
+
+            return card;
+        }
+
+        // Open Project Modal
+        function openProjectModal(projectId) {
+            const project = projectsData.find(p => p.id === projectId);
+            if (!project) return;
+
+            const categoryBadge = project.category === 'academic'
+                ? '<span class="badge badge-primary">Academic Project</span>'
+                : '<span class="badge badge-secondary">Personal Project</span>';
+
+            modalContent.innerHTML = `
+                <div class="relative">
+                    <!-- Close Button -->
+                    <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-surface/90 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-surface transition-colors shadow-medium" aria-label="Close modal">
+                        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+                    </button>
+
+                    <!-- Project Image -->
+                    <div class="relative h-64 md:h-80 rounded-t-2xl overflow-hidden">
+                        <img 
+                            src="${project.image}" 
+                            alt="${project.imageAlt}"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop'; this.onerror=null;"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-text-primary/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            ${categoryBadge}
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6 md:p-8">
+                        <!-- Header -->
+                        <div class="mb-6">
+                            <h2 class="font-headline font-bold text-3xl text-text-primary mb-3">${project.title}</h2>
+                            <div class="flex flex-wrap items-center gap-4 text-sm text-text-muted">
+                                <span class="flex items-center gap-1">
+                                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                                    ${formatDate(project.date)}
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                    ${project.duration}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-6">
+                            <h3 class="font-headline font-semibold text-lg text-text-primary mb-3">Project Overview</h3>
+                            <p class="text-text-muted leading-relaxed">${project.fullDescription}</p>
+                        </div>
+
+                        <!-- Technologies -->
+                        <div class="mb-6">
+                            <h3 class="font-headline font-semibold text-lg text-text-primary mb-3">Technology Stack</h3>
+                            <div class="flex flex-wrap gap-2">
+                                ${project.technologies.map(tech =>
+                `<span class="badge badge-secondary">${tech}</span>`
+            ).join('')}
+                            </div>
+                        </div>
+
+                        <!-- Challenges & Solutions -->
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h3 class="font-headline font-semibold text-lg text-text-primary mb-3 flex items-center gap-2">
+                                    <i data-lucide="alert-circle" class="w-5 h-5 text-warning-500"></i>
+                                    Key Challenges
+                                </h3>
+                                <ul class="space-y-2">
+                                    ${project.challenges.map(challenge =>
+                `<li class="text-text-muted text-sm flex items-start gap-2">
+                                            <i data-lucide="chevron-right" class="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                            <span>${challenge}</span>
+                                        </li>`
+            ).join('')}
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-lg text-text-primary mb-3 flex items-center gap-2">
+                                    <i data-lucide="lightbulb" class="w-5 h-5 text-success-700"></i>
+                                    Solutions Implemented
+                                </h3>
+                                <ul class="space-y-2">
+                                    ${project.solutions.map(solution =>
+                `<li class="text-text-muted text-sm flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-success-700 flex-shrink-0 mt-0.5"></i>
+                                            <span>${solution}</span>
+                                        </li>`
+            ).join('')}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Outcomes -->
+                        <div class="mb-6">
+                            <h3 class="font-headline font-semibold text-lg text-text-primary mb-3 flex items-center gap-2">
+                                <i data-lucide="trophy" class="w-5 h-5 text-primary-500"></i>
+                                Project Outcomes
+                            </h3>
+                            <ul class="space-y-2">
+                                ${project.outcomes.map(outcome =>
+                `<li class="text-text-muted text-sm flex items-start gap-2">
+                                        <i data-lucide="star" class="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                        <span>${outcome}</span>
+                                    </li>`
+            ).join('')}
+                            </ul>
+                        </div>
+
+                        <!-- Lessons Learned -->
+                        <div class="mb-6">
+                            <h3 class="font-headline font-semibold text-lg text-text-primary mb-3 flex items-center gap-2">
+                                <i data-lucide="book-open" class="w-5 h-5 text-secondary-600"></i>
+                                Lessons Learned
+                            </h3>
+                            <ul class="space-y-2">
+                                ${project.lessonsLearned.map(lesson =>
+                `<li class="text-text-muted text-sm flex items-start gap-2">
+                                        <i data-lucide="arrow-right" class="w-4 h-4 text-secondary-600 flex-shrink-0 mt-0.5"></i>
+                                        <span>${lesson}</span>
+                                    </li>`
+            ).join('')}
+                            </ul>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap gap-4 pt-6 border-t border-accent-200">
+                            ${project.liveUrl !== 'javascript:void(0)' ?
+                    `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-1 sm:flex-initial">
+                                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                                    <span>View Live Demo</span>
+                                </a>`
+                    : ''}
+                            <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary flex-1 sm:flex-initial">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            projectModal.classList.remove('hidden');
+            setTimeout(() => {
+                projectModal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+
+            lucide.createIcons();
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Modal
+        function closeModal() {
+            projectModal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                projectModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        // Make closeModal and openProjectModal globally accessible
+        window.closeModal = closeModal;
+        window.openProjectModal = openProjectModal;
+
+        // Update Active Filters
+        function updateActiveFilters() {
+            const hasActiveFilters = currentFilter !== 'all' || searchQuery !== '';
+            resetFilters.classList.toggle('hidden', !hasActiveFilters);
+
+            if (hasActiveFilters) {
+                activeFiltersContainer.classList.remove('hidden');
+                activeFiltersContainer.innerHTML = '';
+
+                if (currentFilter !== 'all') {
+                    const filterTag = document.createElement('span');
+                    filterTag.className = 'badge badge-primary flex items-center gap-2';
+                    filterTag.innerHTML = `
+                        Category: ${currentFilter.charAt(0).toUpperCase() + currentFilter.slice(1)}
+                        <button onclick="removeFilter('category')" class="hover:text-primary-700" aria-label="Remove category filter">
+                            <i data-lucide="x" class="w-3 h-3"></i>
+                        </button>
+                    `;
+                    activeFiltersContainer.appendChild(filterTag);
+                }
+
+                if (searchQuery) {
+                    const searchTag = document.createElement('span');
+                    searchTag.className = 'badge badge-secondary flex items-center gap-2';
+                    searchTag.innerHTML = `
+                        Search: "${searchQuery}"
+                        <button onclick="removeFilter('search')" class="hover:text-secondary-700" aria-label="Remove search filter">
+                            <i data-lucide="x" class="w-3 h-3"></i>
+                        </button>
+                    `;
+                    activeFiltersContainer.appendChild(searchTag);
+                }
+
+                lucide.createIcons();
+            } else {
+                activeFiltersContainer.classList.add('hidden');
+            }
+        }
+
+        // Remove Filter
+        window.removeFilter = function (type) {
+            if (type === 'category') {
+                currentFilter = 'all';
+                filterButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.category === 'all');
+                });
+            } else if (type === 'search') {
+                clearSearchInput();
+            }
+            filterAndRenderProjects();
+            updateActiveFilters();
+        };
+
+        // Reset All Filters
+        function resetAllFilters() {
+            currentFilter = 'all';
+            currentSort = 'recent';
+            searchQuery = '';
+            projectSearch.value = '';
+            sortSelect.value = 'recent';
+            clearSearch.classList.add('hidden');
+
+            filterButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === 'all');
+            });
+
+            filterAndRenderProjects();
+            updateActiveFilters();
+        }
+
+        // Update Total Projects
+        function updateTotalProjects() {
+            totalProjectsEl.textContent = projectsData.length;
+        }
+
+        // Format Date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        }
+
+        // Animate Cards
+        function animateCards() {
+            const cards = document.querySelectorAll('.scale-in');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, index * 100);
+            });
+        }
+
+        // Initialize on page load
+        init();
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 rounded-lg text-sm font-medium text-text-secondary bg-surface border border-accent-300 hover:border-secondary-600 hover:text-secondary-600 transition-all duration-300;
+        }
+
+        .filter-btn.active {
+            @apply bg-secondary-600 text-surface border-secondary-600;
+        }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        #project-modal {
+            backdrop-filter: blur(8px);
+        }
+
+        @media (max-width: 768px) {
+            #modal-content {
+                max-height: 95vh;
+            }
+        }
+    </style>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>

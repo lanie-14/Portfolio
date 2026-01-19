@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hannah C. Alfaro - Technical Skills & Competencies. Explore my programming languages, frameworks, tools, and leadership capabilities with proficiency visualizations.">
+    <meta name="keywords"
+        content="Hannah Alfaro, Technical Skills, Programming Languages, Web Development, Leadership Skills, React, Python, JavaScript">
+    <meta name="author" content="Hannah C. Alfaro">
+    <title>Skills - Hannah C. Alfaro</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="module" async
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhannahpor9090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-surface/95 backdrop-blur-sm shadow-subtle z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-2 group">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-surface font-headline font-bold text-xl">H</span>
+                    </div>
+                    <span class="font-headline font-bold text-xl text-text-primary hidden sm:block">Hannah C.
+                        Alfaro</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="skills.html" class="nav-link active">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="reflection.html" class="nav-link">Reflection</a>
+                    <a href="homepage.html#contact" class="btn btn-primary">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-text-secondary hover:text-primary-500 transition-colors"
+                    aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-accent-300">
+            <div class="container-custom py-4 flex flex-col gap-4">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link active">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="reflection.html" class="nav-link">Reflection</a>
+                <a href="homepage.html#contact" class="btn btn-primary w-full">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <div
+                    class="inline-flex items-center gap-2 bg-secondary-50 text-secondary-700 px-4 py-2 rounded-full mb-6">
+                    <i data-lucide="code-2" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Technical Competencies</span>
+                </div>
+
+                <h1 class="font-headline font-bold text-text-primary mb-6">
+                    Skills <span class="text-gradient">&</span> Expertise
+                </h1>
+
+                <p class="text-lg text-text-muted mb-8 leading-relaxed max-w-2xl mx-auto">
+                    An overview of my technical and leadership skills. Each skill shows my hands-on experience and
+                    ongoing learning.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="grid-3x3" class="w-4 h-4"></i>
+                        <span>All Skills</span>
+                    </button>
+                    <button class="filter-btn" data-filter="programming">
+                        <i data-lucide="code" class="w-4 h-4"></i>
+                        <span>Programming</span>
+                    </button>
+                    <button class="filter-btn" data-filter="frameworks">
+                        <i data-lucide="layers" class="w-4 h-4"></i>
+                        <span>Frameworks</span>
+                    </button>
+                    <button class="filter-btn" data-filter="tools">
+                        <i data-lucide="wrench" class="w-4 h-4"></i>
+                        <span>Tools</span>
+                    </button>
+                    <button class="filter-btn" data-filter="leadership">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <span>Leadership</span>
+                    </button>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-primary-500 mb-1">8+</div>
+                        <div class="text-sm text-text-muted">Languages</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-secondary-600 mb-1">6+</div>
+                        <div class="text-sm text-text-muted">Frameworks</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-accent-600 mb-1">10+</div>
+                        <div class="text-sm text-text-muted">Tools</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-headline font-bold text-success-700 mb-1">5+</div>
+                        <div class="text-sm text-text-muted">Soft Skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section id="programming-languages" class="section bg-surface" data-category="programming">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <div class="inline-flex items-center gap-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full mb-4">
+                    <i data-lucide="terminal" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Core Technologies</span>
+                </div>
+                <h2 class="font-headline font-bold text-text-primary mb-4">Programming Languages</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Proficient in multiple programming languages with practical project experience
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- HTML/CSS -->
+                <div class="card-interactive scale-in skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="code-2" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">HTML/CSS</h3>
+                                <span class="text-sm text-text-muted">Advanced</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-primary">90%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 8</span>
+                        <span class="text-success-700 font-medium">3 years experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Semantic markup, responsive design, Flexbox, Grid, animations
+                    </p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-warning-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="braces" class="w-6 h-6 text-warning-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">JavaScript</h3>
+                                <span class="text-sm text-text-muted">Advanced</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-warning">85%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 7</span>
+                        <span class="text-success-700 font-medium">2 years experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        ES6+, DOM manipulation, async/await, API integration
+                    </p>
+                </div>
+
+                <!-- Python -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="file-code" class="w-6 h-6 text-secondary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Python</h3>
+                                <span class="text-sm text-text-muted">Starter</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">15%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 15%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 1</span>
+                        <span class="text-success-700 font-medium">1 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Data structures, OOP, file handling, data analysis basics
+                    </p>
+                </div>
+
+                <!-- SQL -->
+                <div class="card-interactive scale-in skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="database" class="w-6 h-6 text-accent-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">MySQL</h3>
+                                <span class="text-sm text-text-muted">Intermediate</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">75%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 4</span>
+                        <span class="text-success-700 font-medium">2 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Queries, joins, database design, data manipulation
+                    </p>
+                </div>
+
+                <!-- Java -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-error-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="coffee" class="w-6 h-6 text-error-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Java</h3>
+                                <span class="text-sm text-text-muted">Intermediate</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">70%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 3</span>
+                        <span class="text-success-700 font-medium">1 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        OOP principles, collections, exception handling
+                    </p>
+                </div>
+
+                <!-- C++ -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="programming">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="cpu" class="w-6 h-6 text-success-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">C++</h3>
+                                <span class="text-sm text-text-muted">Beginner</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">60%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 2</span>
+                        <span class="text-success-700 font-medium">1 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Basic syntax, pointers, memory management fundamentals
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks & Libraries Section -->
+    <section id="frameworks" class="section" data-category="frameworks">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <div
+                    class="inline-flex items-center gap-2 bg-secondary-50 text-secondary-700 px-4 py-2 rounded-full mb-4">
+                    <i data-lucide="layers" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Modern Development</span>
+                </div>
+                <h2 class="font-headline font-bold text-text-primary mb-4">Frameworks & Libraries</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Experience with modern frameworks and libraries for efficient development
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Node.js -->
+                <div class="card-interactive scale-in skill-card" data-category="frameworks">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="server" class="w-6 h-6 text-success-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Node.js</h3>
+                                <span class="text-sm text-text-muted">Beginner</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">45%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 45%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 2</span>
+                        <span class="text-success-700 font-medium">1 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Express.js basics, REST APIs, middleware
+                    </p>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="frameworks">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="palette" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Tailwind CSS</h3>
+                                <span class="text-sm text-text-muted">Beginner</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-primary">30%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 30%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 6</span>
+                        <span class="text-success-700 font-medium">1 year experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Utility-first CSS, responsive design, custom configurations
+                    </p>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="frameworks">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="layout-grid" class="w-6 h-6 text-secondary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Bootstrap</h3>
+                                <span class="text-sm text-text-muted">Beginner</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary">30%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 30%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-muted">Projects: 3</span>
+                        <span class="text-success-700 font-medium">3 months experience</span>
+                    </div>
+                    <p class="text-sm text-text-muted mt-3">
+                        Grid system, components, responsive utilities
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Technologies Section -->
+    <section id="tools" class="section bg-surface" data-category="tools">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <div class="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full mb-4">
+                    <i data-lucide="wrench" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Development Ecosystem</span>
+                </div>
+                <h2 class="font-headline font-bold text-text-primary mb-4">Tools & Technologies</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Essential tools for version control, development, and collaboration
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Git -->
+                <div class="card-interactive scale-in skill-card" data-category="tools">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-success-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="git-branch" class="w-8 h-8 text-success-700"></i>
+                        </div>
+                        <h3 class="font-headline font-semibold text-text-primary mb-2">Git</h3>
+                        <span class="badge badge-success mb-3">85%</span>
+                        <div class="skill-bar mb-3">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                        <p class="text-sm text-text-muted">Version control, branching, merging</p>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="tools">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-secondary-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="github" class="w-8 h-8 text-secondary-600"></i>
+                        </div>
+                        <h3 class="font-headline font-semibold text-text-primary mb-2">GitHub</h3>
+                        <span class="badge badge-secondary mb-3">80%</span>
+                        <div class="skill-bar mb-3">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                        <p class="text-sm text-text-muted">Repositories, collaboration, pull requests</p>
+                    </div>
+                </div>
+
+                <!-- VS Code -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="tools">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-accent-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="code" class="w-8 h-8 text-accent-600"></i>
+                        </div>
+                        <h3 class="font-headline font-semibold text-text-primary mb-2">VS Code</h3>
+                        <span class="badge badge-secondary mb-3">90%</span>
+                        <div class="skill-bar mb-3">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <p class="text-sm text-text-muted">Extensions, debugging, productivity</p>
+                    </div>
+                </div>
+
+                <!-- Figma -->
+                <div class="card-interactive scale-in skill-card" data-category="tools">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-primary-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="figma" class="w-8 h-8 text-primary-500"></i>
+                        </div>
+                        <h3 class="font-headline font-semibold text-text-primary mb-2">Figma</h3>
+                        <span class="badge badge-secondary mb-3">70%</span>
+                        <div class="skill-bar mb-3">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                        <p class="text-sm text-text-muted">UI design, prototyping, collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Soft Skills Section -->
+    <section id="leadership" class="section" data-category="leadership">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <div class="inline-flex items-center gap-2 bg-success-50 text-success-700 px-4 py-2 rounded-full mb-4">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span class="text-sm font-medium">Professional Competencies</span>
+                </div>
+                <h2 class="font-headline font-bold text-text-primary mb-4">Leadership & Soft Skills</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Essential interpersonal and organizational skills developed through PADC leadership
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Team Leadership -->
+                <div class="card-interactive scale-in skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="users-2" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Team Leadership</h3>
+                                <span class="text-sm text-text-muted">Expert</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">95%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">PADC Experience</span>
+                        <span class="text-success-700 font-medium">2+ years</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Led teams of 12+ members, coordinated events, mentored peers
+                    </p>
+                </div>
+
+                <!-- Communication -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-secondary-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-secondary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Communication</h3>
+                                <span class="text-sm text-text-muted">Expert</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">90%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">Public Speaking</span>
+                        <span class="text-success-700 font-medium">50+ presentations</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Clear articulation, active listening, presentation skills
+                    </p>
+                </div>
+
+                <!-- Project Management -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="clipboard-list" class="w-6 h-6 text-accent-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Project Management</h3>
+                                <span class="text-sm text-text-muted">Advanced</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">85%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">Events Organized</span>
+                        <span class="text-success-700 font-medium">20+ events</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Planning, coordination, timeline management, resource allocation
+                    </p>
+                </div>
+
+                <!-- Problem Solving -->
+                <div class="card-interactive scale-in skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-warning-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="lightbulb" class="w-6 h-6 text-warning-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Problem Solving</h3>
+                                <span class="text-sm text-text-muted">Advanced</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">88%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">Critical Thinking</span>
+                        <span class="text-success-700 font-medium">Daily practice</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Analytical thinking, creative solutions, debugging mindset
+                    </p>
+                </div>
+
+                <!-- Collaboration -->
+                <div class="card-interactive scale-in stagger-delay-1 skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="handshake" class="w-6 h-6 text-success-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Collaboration</h3>
+                                <span class="text-sm text-text-muted">Expert</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">92%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">Team Projects</span>
+                        <span class="text-success-700 font-medium">15+ collaborations</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Teamwork, resolving conflicts, and building agreement
+                    </p>
+                </div>
+
+                <!-- Time Management -->
+                <div class="card-interactive scale-in stagger-delay-2 skill-card" data-category="leadership">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-error-50 rounded-lg flex items-center justify-center">
+                                <i data-lucide="clock" class="w-6 h-6 text-error-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-text-primary">Time Management</h3>
+                                <span class="text-sm text-text-muted">Expert</span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">95%</span>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mb-3">
+                        <span class="text-text-muted">Prioritization</span>
+                        <span class="text-success-700 font-medium">Proven track record</span>
+                    </div>
+                    <p class="text-sm text-text-muted">
+                        Deadline management, task prioritization, productivity optimization
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="fade-in">
+                    <h2 class="font-headline font-bold text-text-primary mb-4">Ready to Collaborate?</h2>
+                    <p class="text-lg text-text-muted mb-8">
+                        Let's discuss how my skills can contribute to your next project or team
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i data-lucide="folder" class="w-5 h-5"></i>
+                            <span>View My Projects</span>
+                        </a>
+                        <a href="homepage.html#contact" class="btn btn-secondary">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-surface py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                            <span class="text-surface font-headline font-bold text-xl">H</span>
+                        </div>
+                        <span class="font-headline font-bold text-xl">Hannah C. Alfaro</span>
+                    </div>
+                    <p class="text-surface/70">
+                        Bridging leadership and technology to create meaningful impact.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="about.html" class="text-surface/70 hover:text-surface transition-colors">About</a>
+                        <a href="skills.html" class="text-surface/70 hover:text-surface transition-colors">Skills</a>
+                        <a href="projects.html"
+                            class="text-surface/70 hover:text-surface transition-colors">Projects</a>
+                        <a href="reflection.html"
+                            class="text-surface/70 hover:text-surface transition-colors">Reflection</a>
+                    </div>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="mailto:alfaroh.nn.h@gmail.com"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannah-alfaro-2940b6359/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/hxnnhlfr" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors"
+                            aria-label="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-surface/20 pt-8 text-center text-surface/70">
+                <p>&copy; 2026 Hannah C. Alfaro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        // Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const skillCards = document.querySelectorAll('.skill-card');
+        const sections = document.querySelectorAll('section[data-category]');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter cards and sections
+                if (filter === 'all') {
+                    skillCards.forEach(card => {
+                        card.style.display = 'block';
+                    });
+                    sections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    skillCards.forEach(card => {
+                        if (card.dataset.category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    sections.forEach(section => {
+                        if (section.dataset.category === filter) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-up, .scale-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Animate Skill Progress Bars on Scroll
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const width = entry.target.style.width;
+                    entry.target.style.width = '0%';
+                    setTimeout(() => {
+                        entry.target.style.width = width;
+                    }, 100);
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        skillBars.forEach(bar => skillObserver.observe(bar));
+
+        // Active Navigation Link on Scroll
+        const navSections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            navSections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* Filter Button Styles */
+        .filter-btn {
+            @apply px-4 py-2 rounded-lg border-2 border-accent-300 text-text-secondary hover:border-secondary-600 hover:text-secondary-600 transition-all duration-300 inline-flex items-center gap-2 font-medium;
+        }
+
+        .filter-btn.active {
+            @apply bg-secondary-600 text-surface border-secondary-600;
+        }
+
+        /* Skill Card Hover Effects */
+        .skill-card {
+            transition: all 0.3s ease-out;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Timeline Enhancements */
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+            padding-bottom: 0;
+        }
+    </style>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hannah C. Alfaro - Personal Developer Portfolio showcasing leadership experience, technical expertise, and creative vision in technology and design.">
+    <meta name="keywords" content="Hannah Alfaro, Developer Portfolio, Leadership, Technical Skills, Web Development, PADC">
+    <meta name="author" content="Hannah C. Alfaro">
+    <title>Hannah C. Alfaro - Developer & Leader</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhannahpor9090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-surface/95 backdrop-blur-sm shadow-subtle z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-surface font-headline font-bold text-xl">H</span>
+                    </div>
+                    <span class="font-headline font-bold text-xl text-text-primary hidden sm:block">Hannah C. Alfaro</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="homepage.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="reflection.html" class="nav-link">Reflection</a>
+                    <a href="#contact" class="btn btn-primary">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary-500 transition-colors" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-accent-300">
+            <div class="container-custom py-4 flex flex-col gap-4">
+                <a href="homepage.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="reflection.html" class="nav-link">Reflection</a>
+                <a href="#contact" class="btn btn-primary w-full">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="hero" class="pt-32 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-600 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="fade-in">
+                    <div class="inline-flex items-center gap-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full mb-6">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        <span class="text-sm font-medium">Available for Opportunities</span>
+                    </div>
+
+                    <h1 class="font-headline font-bold text-text-primary mb-6">
+                        Hi, I'm <span class="text-gradient">Hannah</span>
+                    </h1>
+                    
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-headline font-semibold text-text-secondary mb-6">
+                        Leader. Developer. Problem Solver.
+                    </h2>
+
+                    <p class="text-lg text-text-muted mb-8 leading-relaxed">
+                        I started joining organizations during my first year in college as part of the Image Publication team, where I discovered my passion for digital design and creative work. As I gained experience and confidence, I continued serving the organization and became a PADC Officer during my second and third year. Through these roles, I learned leadership, teamwork, responsibility, and time management, which helped shape me both as a student and as an individual.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-12">
+                        <a href="projects.html" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-headline font-bold text-primary-500 mb-1">5+</div>
+                            <div class="text-sm text-text-muted">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-headline font-bold text-secondary-600 mb-1">5+</div>
+                            <div class="text-sm text-text-muted">Technologies</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-headline font-bold text-accent-600 mb-1">3</div>
+                            <div class="text-sm text-text-muted">Years Leading</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-up stagger-delay-1 relative">
+                    <div class="relative">
+                        <!-- Profile Image Container -->
+                        <div class="relative w-full aspect-square max-w-md mx-auto">
+                            <div class="absolute inset-0 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-2xl transform rotate-6"></div>
+                            <div class="absolute inset-0 bg-surface rounded-2xl shadow-strong overflow-hidden">
+                                <img 
+                                    src="../images/profile.jpg" 
+                                    alt="picture of hannah"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Floating Skill Badges -->
+                        <div class="absolute -top-4 -left-4 bg-surface rounded-xl shadow-medium p-3 animate-pulse-slow">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="code" class="w-5 h-5 text-primary-500"></i>
+                                <span class="text-sm font-medium text-text-primary">Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-4 -right-4 bg-surface rounded-xl shadow-medium p-3 animate-pulse-slow" style="animation-delay: 1s;">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-secondary-600"></i>
+                                <span class="text-sm font-medium text-text-primary">Leader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Highlight Section -->
+    <section id="skills-preview" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">Technical Arsenal</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    A growing collection of technologies and frameworks that power my projects
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- HTML/CSS -->
+                <div class="card-interactive text-center scale-in">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="code-2" class="w-8 h-8 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">HTML/CSS</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Advanced</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="card-interactive text-center scale-in stagger-delay-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-warning-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="braces" class="w-8 h-8 text-warning-500"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">JavaScript</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Advanced</span>
+                </div>
+
+                <!-- Python -->
+                <div class="card-interactive text-center scale-in stagger-delay-2">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-secondary-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="terminal" class="w-8 h-8 text-secondary-600"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">Python</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 15%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Starter</span>
+                </div>
+
+                <!-- React -->
+                <div class="card-interactive text-center scale-in stagger-delay-3">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-accent-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="component" class="w-8 h-8 text-accent-600"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">React</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 5%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Starter</span>
+                </div>
+
+                <!-- Git -->
+                <div class="card-interactive text-center scale-in">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-success-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="git-branch" class="w-8 h-8 text-success-700"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">Git</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Advanced</span>
+                </div>
+
+                <!-- Leadership -->
+                <div class="card-interactive text-center scale-in stagger-delay-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="trophy" class="w-8 h-8 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-text-primary mb-2">Leadership</h3>
+                    <div class="skill-bar mb-2">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <span class="text-sm text-text-muted">Expert</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="skills.html" class="btn btn-secondary">
+                    <span>Explore All Skills</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline Section -->
+    <section id="journey" class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">My Journey</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    A story of continuous growth and transformation
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="users" class="w-6 h-6 text-primary-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="font-headline font-semibold text-text-primary">PADC Officer</h3>
+                                <span class="badge badge-primary">2024-Present</span>
+                            </div>
+                            <p class="text-text-muted mb-3">
+                                Led organizational initiatives, managed members, and developed communication strategies that impacted hundreds of students.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-secondary">Team Management</span>
+                                <span class="badge badge-secondary">Event Planning</span>
+                                <span class="badge badge-secondary">Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-in stagger-delay-1">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="code" class="w-6 h-6 text-secondary-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="font-headline font-semibold text-text-primary">Programming Journey Begins</h3>
+                                <span class="badge badge-secondary">2023</span>
+                            </div>
+                            <p class="text-text-muted mb-3">
+                                Discovered passion for coding through academic projects. Started with HTML/CSS and expanded to JavaScript and Python.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-secondary">HTML/CSS</span>
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <span class="badge badge-secondary">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item fade-in stagger-delay-2">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="rocket" class="w-6 h-6 text-accent-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="font-headline font-semibold text-text-primary">First Major Projects</h3>
+                                <span class="badge badge-secondary">2024</span>
+                            </div>
+                            <p class="text-text-muted mb-3">
+                                Built responsive websites, added interactive features, and learned modern development tools.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-secondary">React</span>
+                                <span class="badge badge-secondary">Git</span>
+                                <span class="badge badge-secondary">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item fade-in stagger-delay-3">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-success-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="target" class="w-6 h-6 text-success-700"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="font-headline font-semibold text-text-primary">Looking Forward</h3>
+                                <span class="badge badge-success">2025+</span>
+                            </div>
+                            <p class="text-text-muted mb-3">
+                                Aiming to use leadership and technical skills to create meaningful tech solutions.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-success">Full-Stack Development</span>
+                                <span class="badge badge-success">Team Collaboration</span>
+                                <span class="badge badge-success">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="about.html" class="btn btn-outline">
+                    <span>Read Full Story</span>
+                    <i data-lucide="book-open" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">Featured Projects</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Sample projects showing my technical skills and how I solve problems
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="card-interactive scale-in">
+                    <div class="relative h-48 mb-4 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://img.rocket.new/generatedImages/rocket_gen_img_116b17f40-1764672098874.png" 
+                            alt="Dashboard interface showing data visualization and analytics for task management application"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-text-primary/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="badge bg-surface text-text-primary">Academic</span>
+                        </div>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Task Management App</h3>
+                    <p class="text-text-muted mb-4">
+                        Interactive web application for organizing tasks with drag-and-drop functionality and real-time updates.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="badge badge-primary">React</span>
+                        <span class="badge badge-primary">JavaScript</span>
+                        <span class="badge badge-primary">CSS</span>
+                    </div>
+                    <a href="projects.html" class="btn btn-ghost w-full">
+                        <span>View Details</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card-interactive scale-in stagger-delay-1">
+                    <div class="relative h-48 mb-4 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://img.rocket.new/generatedImages/rocket_gen_img_122b6b583-1768035845573.png" 
+                            alt="Responsive portfolio website design showcasing modern web development techniques"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg'; this.onerror=null;"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-text-primary/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="badge bg-surface text-text-primary">Personal</span>
+                        </div>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Responsive Portfolio</h3>
+                    <p class="text-text-muted mb-4">
+                        Modern, mobile-first portfolio website with smooth animations and interactive elements.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="badge badge-secondary">HTML</span>
+                        <span class="badge badge-secondary">Tailwind CSS</span>
+                        <span class="badge badge-secondary">JavaScript</span>
+                    </div>
+                    <a href="projects.html" class="btn btn-ghost w-full">
+                        <span>View Details</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card-interactive scale-in stagger-delay-2">
+                    <div class="relative h-48 mb-4 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://img.rocket.new/generatedImages/rocket_gen_img_10562b602-1767082357762.png" 
+                            alt="Python data analysis project showing charts and statistical visualizations"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'; this.onerror=null;"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-text-primary/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="badge bg-surface text-text-primary">Academic</span>
+                        </div>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Data Analysis Tool</h3>
+                    <p class="text-text-muted mb-4">
+                        Python-based tool for analyzing and visualizing data sets with interactive charts and reports.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="badge badge-accent">Python</span>
+                        <span class="badge badge-accent">Pandas</span>
+                        <span class="badge badge-accent">Matplotlib</span>
+                    </div>
+                    <a href="projects.html" class="btn btn-ghost w-full">
+                        <span>View Details</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="projects.html" class="btn btn-primary">
+                    <span>View All Projects</span>
+                    <i data-lucide="folder" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="value-proposition" class="section">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="card bg-gradient-to-br from-primary-50 to-secondary-50 border-2 border-accent-300">
+                    <div class="text-center mb-8">
+                        <h2 class="font-headline font-bold text-text-primary mb-4">Why Work With Me?</h2>
+                        <p class="text-lg text-text-muted">
+                            I bring a unique combination of skills that bridges leadership and technology
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Value 1 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-primary-500 rounded-xl flex items-center justify-center shadow-glow">
+                                <i data-lucide="lightbulb" class="w-8 h-8 text-surface"></i>
+                            </div>
+                            <h3 class="font-headline font-semibold text-text-primary mb-2">Problem Solver</h3>
+                            <p class="text-text-muted">
+                                Approach challenges with creative solutions backed by analytical thinking
+                            </p>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-secondary-600 rounded-xl flex items-center justify-center shadow-glow-secondary">
+                                <i data-lucide="users-2" class="w-8 h-8 text-surface"></i>
+                            </div>
+                            <h3 class="font-headline font-semibold text-text-primary mb-2">Team Player</h3>
+                            <p class="text-text-muted">
+                                Leadership experience translates to effective collaboration and communication
+                            </p>
+                        </div>
+
+                        <!-- Value 3 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-accent-600 rounded-xl flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-8 h-8 text-surface"></i>
+                            </div>
+                            <h3 class="font-headline font-semibold text-text-primary mb-2">Fast Learner</h3>
+                            <p class="text-text-muted">
+                                Continuously expanding technical skills with dedication and enthusiasm
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <a href="reflection.html" class="btn btn-secondary">
+                            <span>Read My Reflections</span>
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="fade-in">
+                    <h2 class="font-headline font-bold text-text-primary mb-4">Let's Connect</h2>
+                    <p class="text-lg text-text-muted mb-8">
+                        I'm always open to discussing new opportunities, collaborations, or just connecting with fellow developers and leaders.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <a href="mailto:alfaroh.nn.h@gmail.com" class="btn btn-primary">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannah-alfaro-2940b6359/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/hxnnhlfr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="inline-flex items-center gap-2 text-text-muted">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        <a href="javascript:void(0)" class="text-secondary-600 hover:text-primary-500 font-medium">Download Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-surface py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                            <span class="text-surface font-headline font-bold text-xl">H</span>
+                        </div>
+                        <span class="font-headline font-bold text-xl">Hannah C. Alfaro</span>
+                    </div>
+                    <p class="text-surface/70">
+                        Bridging leadership and technology to create meaningful impact.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="about.html" class="text-surface/70 hover:text-surface transition-colors">About</a>
+                        <a href="skills.html" class="text-surface/70 hover:text-surface transition-colors">Skills</a>
+                        <a href="projects.html" class="text-surface/70 hover:text-surface transition-colors">Projects</a>
+                        <a href="reflection.html" class="text-surface/70 hover:text-surface transition-colors">Reflection</a>
+                    </div>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="mailto:alfaroh.nn.h@gmail.com" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannah-alfaro-2940b6359/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/hxnnhlfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-surface/20 pt-8 text-center text-surface/70">
+                <p>&copy; 2023 Hannah C. Alfaro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-up, .scale-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Animate Skill Progress Bars on Scroll
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const width = entry.target.style.width;
+                    entry.target.style.width = '0%';
+                    setTimeout(() => {
+                        entry.target.style.width = width;
+                    }, 100);
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        skillBars.forEach(bar => skillObserver.observe(bar));
+
+        // Active Navigation Link on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

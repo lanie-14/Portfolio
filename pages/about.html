@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Hannah C. Alfaro - Journey from PADC leadership to technical development, showcasing growth, resilience, and the evolution of a leader-developer.">
+    <meta name="keywords" content="Hannah Alfaro, About, Leadership Journey, PADC, Technical Development, Career Growth, Professional Timeline">
+    <meta name="author" content="Hannah C. Alfaro">
+    <title>About - Hannah C. Alfaro</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhannahpor9090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-surface/95 backdrop-blur-sm shadow-subtle z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-surface font-headline font-bold text-xl">H</span>
+                    </div>
+                    <span class="font-headline font-bold text-xl text-text-primary hidden sm:block">Hannah C. Alfaro</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="reflection.html" class="nav-link">Reflection</a>
+                    <a href="#contact" class="btn btn-primary">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary-500 transition-colors" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-accent-300">
+            <div class="container-custom py-4 flex flex-col gap-4">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="reflection.html" class="nav-link">Reflection</a>
+                <a href="#contact" class="btn btn-primary w-full">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about-hero" class="pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Hero Content -->
+                <div class="fade-in">
+                    <div class="inline-flex items-center gap-2 bg-secondary-50 text-secondary-700 px-4 py-2 rounded-full mb-6">
+                        <i data-lucide="user" class="w-4 h-4"></i>
+                        <span class="text-sm font-medium">My Story</span>
+                    </div>
+
+                    <h1 class="font-headline font-bold text-text-primary mb-6">
+                        From Leader to <span class="text-gradient">Leader-Developer</span>
+                    </h1>
+                    
+                    <p class="text-lg text-text-muted mb-6 leading-relaxed">
+                        My journey shows growth from leadership roles to coding and creating digital solutions. Each experience helped me learn and improve.
+                    </p>
+
+                    <p class="text-lg text-text-muted mb-8 leading-relaxed">
+                        I believe that the best technical solutions come from understanding people, and the most effective leadership emerges from embracing continuous learning. This philosophy drives everything I do.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-surface rounded-xl p-4 shadow-subtle">
+                            <div class="text-3xl font-headline font-bold text-primary-500 mb-1">3</div>
+                            <div class="text-sm text-text-muted">Years in Leadership</div>
+                        </div>
+                        <div class="bg-surface rounded-xl p-4 shadow-subtle">
+                            <div class="text-3xl font-headline font-bold text-secondary-600 mb-1">850+</div>
+                            <div class="text-sm text-text-muted">Students Impacted</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="flex flex-wrap gap-4">
+                        <a href="javascript:void(0)" class="btn btn-primary" id="download-resume">
+                            <i data-lucide="download" class="w-5 h-5"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#timeline" class="btn btn-outline">
+                            <i data-lucide="map" class="w-5 h-5"></i>
+                            <span>View Journey</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Professional Photo -->
+                <div class="slide-up stagger-delay-1 relative">
+                    <div class="relative">
+                        <!-- Photo Container -->
+                        <div class="relative w-full aspect-[4/5] max-w-md mx-auto">
+                            <div class="absolute inset-0 bg-gradient-to-br from-secondary-600 to-primary-500 rounded-2xl transform -rotate-6"></div>
+                            <div class="absolute inset-0 bg-surface rounded-2xl shadow-strong overflow-hidden">
+                                <img 
+                                    src="../images/side-angle-1.jpg" 
+                                    alt="Hannah wearing Filipiniana"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Floating Achievement Badges -->
+                        <div class="absolute -top-4 -right-4 bg-surface rounded-xl shadow-medium p-3 animate-pulse-slow">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="award" class="w-5 h-5 text-primary-500"></i>
+                                <span class="text-sm font-medium text-text-primary">PADC Leader</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-4 -left-4 bg-surface rounded-xl shadow-medium p-3 animate-pulse-slow" style="animation-delay: 1s;">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-secondary-600"></i>
+                                <span class="text-sm font-medium text-text-primary">CS Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Story Section -->
+    <section id="story" class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="font-headline font-bold text-text-primary mb-4">The Journey Begins</h2>
+                    <p class="text-lg text-text-muted">
+                        Every great story has a beginning, here's mine
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Story Block 1 -->
+                    <div class="card fade-in">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="heart" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Finding My Passion</h3>
+                                <p class="text-text-muted leading-relaxed">
+                                    My journey in leadership started with a simple goal to make a difference. Joining PADC was not just about being in an organization, but about building connections and working toward a bigger purpose. Bringing people together and organizing meaningful events gave me a strong sense of fulfillment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Block 2 -->
+                    <div class="card fade-in stagger-delay-1">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="users" class="w-6 h-6 text-secondary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Leadership Through Action</h3>
+                                <p class="text-text-muted leading-relaxed">
+                                    As I took on different roles in PADC, I learned that leadership is not about titles, but about making an impact. Managing members, organizing events, and improving communication taught me the value of teamwork, problem solving, and resilience. Every challenge helped me grow, and every success showed me the power of working together.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Block 3 -->
+                    <div class="card fade-in stagger-delay-2">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="lightbulb" class="w-6 h-6 text-accent-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">The Technical Awakening</h3>
+                                <p class="text-text-muted leading-relaxed">
+                                    I was introduced to programming through a required course, and it soon became a passion. I enjoyed the logic, creativity, and problem solving in coding. When I built my first interactive webpage, I realized that technology could help me make a bigger impact. I also saw how my leadership skills fit well with coding, such as understanding user needs, managing time, and working well with a team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Block 4 -->
+                    <div class="card fade-in stagger-delay-3">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-success-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="rocket" class="w-6 h-6 text-success-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Bridging Two Worlds</h3>
+                                <p class="text-text-muted leading-relaxed">
+                                    Today, I combine leadership and technology. My experience in organizing helps me approach technical problems with empathy, planning, and a focus on real impact. My coding skills let me bring new solutions to leadership challenges. This mix is not just my strength, it is who I am. I am not choosing between being a leader or a developer; I am a leader-developer, and that is where I belong.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">Professional Timeline</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Major milestones in my growth from leader to developer
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="flag" class="w-8 h-8 text-primary-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">Joined Image Publication</h3>
+                                <span class="badge badge-primary">August 2023</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                I began as a Layout Artist in The Image Publication, which was my first step into leadership and collaboration.
+                            </p>
+                            <div class="bg-accent-50 rounded-lg p-4 border-l-4 border-accent-300">
+                                <h4 class="font-headline font-semibold text-text-primary mb-2 flex items-center gap-2">
+                                    <i data-lucide="target" class="w-4 h-4 text-accent-600"></i>
+                                    Key Achievement
+                                </h4>
+                                <p class="text-text-muted text-sm">
+                                    Produced layouts and graphics that enhanced the readability and appeal of The Image Publication.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item fade-in stagger-delay-2">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-accent-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="code" class="w-8 h-8 text-accent-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">First Programming Course</h3>
+                                <span class="badge badge-secondary">August 2023</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                Enrolled in Web Systems & Technology 1. Built my first HTML/CSS website and discovered a passion for creating digital experiences.
+                            </p>
+                            <div class="bg-accent-50 rounded-lg p-4 border-l-4 border-accent-300">
+                                <h4 class="font-headline font-semibold text-text-primary mb-2 flex items-center gap-2">
+                                    <i data-lucide="sparkles" class="w-4 h-4 text-accent-600"></i>
+                                    Breakthrough Moment
+                                </h4>
+                                <p class="text-text-muted text-sm">
+                                    Created my first interactive webpage with JavaScript, realizing how technology could amplify my leadership impact and reach more people effectively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-in stagger-delay-1">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-secondary-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="trending-up" class="w-8 h-8 text-secondary-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">Committee Lead</h3>
+                                <span class="badge badge-secondary">April 2024</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                Managed a team starting as Vice Mayor, improving my skills in planning, teamwork, and multitasking.
+                            </p>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="bg-secondary-50 rounded-lg p-4">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i data-lucide="users-2" class="w-5 h-5 text-secondary-600"></i>
+                                        <h4 class="font-headline font-semibold text-text-primary">Team Management</h4>
+                                    </div>
+                                    <p class="text-text-muted text-sm">Led 12-member team across 8 major events</p>
+                                </div>
+                                <div class="bg-secondary-50 rounded-lg p-4">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i data-lucide="calendar" class="w-5 h-5 text-secondary-600"></i>
+                                        <h4 class="font-headline font-semibold text-text-primary">Event Success</h4>
+                                    </div>
+                                    <p class="text-text-muted text-sm">100% on-time delivery with 95% satisfaction rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item fade-in stagger-delay-3">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="crown" class="w-8 h-8 text-primary-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">PADC Mayor</h3>
+                                <span class="badge badge-primary">April 2025</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                As Mayor, I guided the organization and helped develop members. I set up better communication and mentorship programs, increasing engagement by 80%, while applying coding project management skills to leadership.
+                            </p>
+                            <div class="grid sm:grid-cols-3 gap-4">
+                                <div class="bg-primary-50 rounded-lg p-4 text-center">
+                                    <div class="text-2xl font-headline font-bold text-primary-500 mb-1">80%</div>
+                                    <div class="text-xs text-text-muted">Engagement Increase</div>
+                                </div>
+                                <div class="bg-primary-50 rounded-lg p-4 text-center">
+                                    <div class="text-2xl font-headline font-bold text-primary-500 mb-1">15+</div>
+                                    <div class="text-xs text-text-muted">Events Organized</div>
+                                </div>
+                                <div class="bg-primary-50 rounded-lg p-4 text-center">
+                                    <div class="text-2xl font-headline font-bold text-primary-500 mb-1">850+</div>
+                                    <div class="text-xs text-text-muted">Members</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-secondary-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="laptop" class="w-8 h-8 text-secondary-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">Advanced Programming</h3>
+                                <span class="badge badge-secondary">June 2024</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                Expanded technical skills with JavaScript, React, and Python. Exploring to build multiple projects including an application.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-secondary">React</span>
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <span class="badge badge-secondary">Python</span>
+                                <span class="badge badge-secondary">Git</span>
+                                <span class="badge badge-secondary">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item fade-in stagger-delay-1">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-success-100 rounded-xl flex items-center justify-center shadow-subtle">
+                            <i data-lucide="compass" class="w-8 h-8 text-success-700"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+                                <h3 class="font-headline font-semibold text-xl text-text-primary">Looking Forward</h3>
+                                <span class="badge badge-success">2026 & Beyond</span>
+                            </div>
+                            <p class="text-text-muted mb-4 leading-relaxed">
+                                I am looking for opportunities to combine my leadership experience with technical skills. I want to join a team where I can work on meaningful projects and keep growing as a developer. I am especially interested in roles that value both coding skills and teamwork.
+                            </p>
+                            <div class="bg-success-50 rounded-lg p-4 border-l-4 border-success-700">
+                                <h4 class="font-headline font-semibold text-text-primary mb-2 flex items-center gap-2">
+                                    <i data-lucide="target" class="w-4 h-4 text-success-700"></i>
+                                    Career Aspirations
+                                </h4>
+                                <ul class="space-y-2 text-text-muted text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-success-700 mt-0.5 flex-shrink-0"></i>
+                                        <span>Full-stack developer role emphasizing user-friendly interface design and layout</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-success-700 mt-0.5 flex-shrink-0"></i>
+                                        <span>Technical team leadership opportunities</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-success-700 mt-0.5 flex-shrink-0"></i>
+                                        <span>Contributing to open-source projects</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section id="education" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">Education & Achievements</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    Academic foundation and recognition that shaped my journey
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                <!-- Education Card -->
+                <div class="card-interactive scale-in">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-secondary-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Bachelor of Science in Information Technology</h3>
+                            <p class="text-text-muted mb-2">OMSC - Mamburao Campus</p>
+                            <span class="badge badge-secondary">2023-Present</span>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Focusing on software development, web technologies, and UI/UX design. Keeping good grades while working on student projects and building user-friendly digital experiences.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>Dean's List - 5 consecutive semesters</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>GPA: 94.40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Achievement -->
+                <div class="card-interactive scale-in stagger-delay-1">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="award" class="w-6 h-6 text-primary-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">PADC Mayor</h3>
+                            <p class="text-text-muted mb-2">Programmers', Animators', Developers' CLan</p>
+                            <span class="badge badge-primary">2024 - Present</span>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Overseeing organization, developing members, and coordinating events to make a bigger impact.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>80% increase in member engagement</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>15+ successful events organized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Achievement -->
+                <div class="card-interactive scale-in stagger-delay-2">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="code-2" class="w-6 h-6 text-accent-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Web Development Excellence</h3>
+                            <p class="text-text-muted mb-2">Academic Projects</p>
+                            <span class="badge badge-secondary">2023 - 2026</span>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Delivered web apps with clean code, modern design, and strong focus on user experience.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>5+ completed projects</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>A grades in all programming courses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Impact -->
+                <div class="card-interactive scale-in stagger-delay-3">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-success-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="heart" class="w-6 h-6 text-success-700"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline font-semibold text-xl text-text-primary mb-2">Community Service</h3>
+                            <p class="text-text-muted mb-2">Health Awareness Campaigns</p>
+                            <span class="badge badge-success">2022 - Present</span>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                       Organized and took part in several mental health awareness programs, reaching hundreds of students and community members with important information and support.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>850+  members reached</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-muted">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-success-700"></i>
+                            <span>5+ successful campaigns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="values" class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-headline font-bold text-text-primary mb-4">What Drives Me</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">
+                    The principles that guide my work and define my approach
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="card text-center scale-in">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary-100 rounded-xl flex items-center justify-center">
+                        <i data-lucide="heart-handshake" class="w-8 h-8 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-3">Empathy First</h3>
+                    <p class="text-text-muted">
+                        Knowing what users need and how teams work is key to creating good solutions. Technology should help people, not control them.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="card text-center scale-in stagger-delay-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-secondary-100 rounded-xl flex items-center justify-center">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-secondary-600"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-3">Continuous Growth</h3>
+                    <p class="text-text-muted">
+                        I see every challenge as a chance to learn. I approach new technologies and methods with energy and commitment.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="card text-center scale-in stagger-delay-2">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-accent-100 rounded-xl flex items-center justify-center">
+                        <i data-lucide="users-2" class="w-8 h-8 text-accent-600"></i>
+                    </div>
+                    <h3 class="font-headline font-semibold text-xl text-text-primary mb-3">Collaborative Spirit</h3>
+                    <p class="text-text-muted">
+                        The best solutions come from different perspectives. I value teamwork, clear communication, and working together to succeed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="fade-in">
+                    <h2 class="font-headline font-bold text-text-primary mb-4">Let's Build Something Together</h2>
+                    <p class="text-lg text-text-muted mb-8">
+                        I'm excited to connect with teams and individuals who value both technical excellence and human-centered leadership. Whether you're looking for a developer, a collaborator, or just want to chat about technology and leadership, I'd love to hear from you.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <a href="mailto:hannah.alfaro@example.com" class="btn btn-primary">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://linkedin.com/in/hannah-alfaro" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/hannah-alfaro" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="inline-flex items-center gap-2 text-text-muted">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        <a href="javascript:void(0)" id="download-resume-footer" class="text-secondary-600 hover:text-primary-500 font-medium">Download Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-surface py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                            <span class="text-surface font-headline font-bold text-xl">H</span>
+                        </div>
+                        <span class="font-headline font-bold text-xl">Hannah C. Alfaro</span>
+                    </div>
+                    <p class="text-surface/70">
+                        Bridging leadership and technology to create meaningful impact.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="homepage.html" class="text-surface/70 hover:text-surface transition-colors">Home</a>
+                        <a href="about.html" class="text-surface/70 hover:text-surface transition-colors">About</a>
+                        <a href="skills.html" class="text-surface/70 hover:text-surface transition-colors">Skills</a>
+                        <a href="projects.html" class="text-surface/70 hover:text-surface transition-colors">Projects</a>
+                        <a href="reflection.html" class="text-surface/70 hover:text-surface transition-colors">Reflection</a>
+                    </div>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-headline font-semibold mb-4">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="mailto:alfaroh.nn.h@gmail.com" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannah-alfaro-2940b6359/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/hxnnhlfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-lg flex items-center justify-center transition-colors" aria-label="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-surface/20 pt-8 text-center text-surface/70">
+                <p>&copy; 2023 Hannah C. Alfaro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-up, .scale-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Resume Download Handlers
+        const downloadResumeButtons = [
+            document.getElementById('download-resume'),
+            document.getElementById('download-resume-footer')
+        ];
+
+        downloadResumeButtons.forEach(button => {
+            if (button) {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Simulate resume download
+                    alert('Resume download would start here. In a real implementation, this would link to an actual PDF file.');
+                });
+            }
+        });
+
+        // Active Navigation Link on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href === `#${current}` || (href === 'about.html' && !current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
