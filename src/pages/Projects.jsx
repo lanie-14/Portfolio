@@ -10,19 +10,33 @@ const Projects = () => {
   const projectsData = [
     {
         id: 1,
-        title: "Clinicore System",
-        category: "academic",
-        date: "2025-03-15",
-        duration: "1 month",
-        shortDescription: "High-performance clinic inventory and management ecosystem.",
-        fullDescription: "A robust web application designed for clinic management, handling inventory tracking, stock monitoring, and dental supply records with a focus on ease of use and data persistence. Built during my 1st year in the BIST course.",
-        imageAlt: "Clinicore - Clinic Inventory Management System",
-        technologies: ["Visual Basic", "MySQL", "Figma"],
-        challenges: ["Complex stock level monitoring", "Interface simplicity for medical use"],
-        solutions: ["Categorized supply hierarchy", "Interactive dashboard architecture"],
-        outcomes: ["30% faster inventory retrieval", "Error-free data entry"],
-        githubUrl: "https://github.com/hxnnhlfr",
+        title: "Infrax",
+        category: "personal",
+        date: "2025-06-10",
+        duration: "2 months",
+        shortDescription: "Sleek mobile application for infrastructure monitoring.",
+        fullDescription: "A modern mobile app design containing 20+ screens, focused on infrastructure management and real-time monitoring. Built to streamline complex data visualization into a mobile-first experience.",
+        imageAlt: "Infrax Mobile App Design",
+        technologies: ["React Native", "Figma", "Tailwind CSS"],
+        challenges: ["Mapping complex infrastructure nodes", "Ensuring high-performance animations"],
+        solutions: ["Modular component architecture", "Hardware-accelerated transitions"],
+        githubUrl: "https://github.com/arvindelarosa",
         color: "indigo"
+    },
+    {
+        id: 2,
+        title: "Brgy Profiling System",
+        category: "academic",
+        date: "2025-08-20",
+        duration: "3 months",
+        shortDescription: "AI-powered community governance platform.",
+        fullDescription: "A comprehensive digital governance platform designed to replace manual processes in local communities. Features resident profiling, certificate issuance, and AI-driven data analysis for better decision making.",
+        imageAlt: "Brgy Profiling System - SmartBarangay",
+        technologies: ["React", "Laravel", "MySQL", "AI Integration"],
+        challenges: ["Handling sensitive resident data", "Automating document generation"],
+        solutions: ["Secure database encryption", "Real-time PDF generation engine"],
+        githubUrl: "https://github.com/arvindelarosa",
+        color: "cyan"
     }
   ]
 

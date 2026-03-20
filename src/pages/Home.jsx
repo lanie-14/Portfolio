@@ -140,15 +140,15 @@ const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-10">
                 <ProjectFeature 
-                    title="Clinicore System" 
-                    desc="High-performance healthcare inventory management." 
-                    tag="Academic" 
+                    title="Infrax" 
+                    desc="Modern infrastructure monitoring and management mobile application." 
+                    tag="Mobile App" 
                     color="indigo" 
                 />
                 <ProjectFeature 
-                    title="Vista Dal Mare" 
-                    desc="Luxury beach resort reservation ecosystem." 
-                    tag="Personal" 
+                    title="Brgy Profiling" 
+                    desc="AI-powered community governance and profiling platform." 
+                    tag="Web App" 
                     color="cyan" 
                 />
             </div>
