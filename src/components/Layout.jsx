@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, Zap } from 'lucide-react'
+import { Menu, X, Github, Mail, ArrowRight, Zap } from 'lucide-react'
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -112,7 +112,6 @@ const Layout = () => {
               </p>
               <div className="flex gap-4">
                 <SocialIcon icon={Github} href="https://github.com/arvindelarosa" />
-                <SocialIcon icon={Linkedin} href="https://linkedin.com/in/arvindelarosa" />
                 <SocialIcon icon={Mail} href="mailto:arvindelarosa@gmail.com" />
               </div>
 

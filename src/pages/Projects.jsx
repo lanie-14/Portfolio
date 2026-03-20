@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FolderOpen, Search, X, Filter, RotateCcw, Calendar, ExternalLink, Github, Maximize2, Clock, AlertCircle, Lightbulb, Trophy, BookOpen, ChevronRight, Star, ArrowRight, Code2, Mail, Linkedin, Zap, Layout, Monitor, Box, Layers } from 'lucide-react'
+import { FolderOpen, Search, X, Filter, RotateCcw, Calendar, ExternalLink, Github, Maximize2, Clock, AlertCircle, Lightbulb, Trophy, BookOpen, ChevronRight, Star, ArrowRight, Code2, Mail, Zap, Layout, Monitor, Box, Layers } from 'lucide-react'
 
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState('')

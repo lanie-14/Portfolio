@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { User, Download, Map, Award, GraduationCap, Heart, Users, Lightbulb, Rocket, Flag, Target, Sparkles, TrendingUp, Users2, Calendar, Crown, Laptop, Compass, Check, CheckCircle, HeartHandshake, Mail, Linkedin, Github, Code, Zap } from 'lucide-react'
+import { User, Download, Map, Award, GraduationCap, Heart, Users, Lightbulb, Rocket, Flag, Target, Sparkles, TrendingUp, Users2, Calendar, Crown, Laptop, Compass, Check, CheckCircle, HeartHandshake, Mail, Github, Code, Zap } from 'lucide-react'
 
 const About = () => {
   useEffect(() => {
@@ -137,7 +137,6 @@ const About = () => {
                 <span className="text-white font-bold opacity-60">SOCIAL</span>
                 <div className="flex gap-4">
                     <SocialLite icon={Github} />
-                    <SocialLite icon={Linkedin} />
                 </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Sparkles, ArrowRight, Mail, Code, Users, Code2, Braces, Terminal, Component, GitBranch, Trophy, Target, Rocket, BookOpen, Folder, Lightbulb, Users2, TrendingUp, Download, Linkedin, Github, Zap, User, UserCheck } from 'lucide-react'
+import { Sparkles, ArrowRight, Mail, Code, Users, Code2, Braces, Terminal, Component, GitBranch, Trophy, Target, Rocket, BookOpen, Folder, Lightbulb, Users2, TrendingUp, Download, Github, Zap, User, UserCheck } from 'lucide-react'
 
 const Home = () => {
   useEffect(() => {
@@ -172,7 +172,6 @@ const Home = () => {
                     </a>
                     <div className="flex gap-4">
                         <SocialBtn icon={Github} href="https://github.com/arvindelarosa" />
-                        <SocialBtn icon={Linkedin} href="https://linkedin.com/in/arvindelarosa" />
                     </div>
 
                 </div>

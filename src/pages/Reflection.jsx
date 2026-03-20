@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BookOpen, Share2, Mail, Linkedin, Github, Twitter, Facebook, Link as LinkIcon, CheckCircle, ChevronRight, Star, ArrowRight, Zap, Target, MessageSquare, Quote } from 'lucide-react'
+import { BookOpen, Share2, Mail, Github, Twitter, Facebook, Link as LinkIcon, CheckCircle, ChevronRight, Star, ArrowRight, Zap, Target, MessageSquare, Quote } from 'lucide-react'
 
 const Reflection = () => {
   useEffect(() => {
@@ -102,7 +102,6 @@ const Reflection = () => {
                 
                 <div className="flex flex-wrap justify-center gap-6 mb-16">
                     <SocialLite icon={Mail} label="Email" href="mailto:arvindelarosa@gmail.com" color="indigo" />
-                    <SocialLite icon={Linkedin} label="LinkedIn" href="https://linkedin.com/in/arvindelarosa" color="cyan" />
                     <SocialLite icon={Github} label="GitHub" href="https://github.com/arvindelarosa" color="slate" />
                 </div>
 
