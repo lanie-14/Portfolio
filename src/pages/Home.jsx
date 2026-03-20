@@ -54,7 +54,7 @@ const Home = () => {
                   <span>Explore Work</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href="#contact" className="btn btn-secondary">
+                <a href="https://web.facebook.com/arvin.delarosa.338/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                   <Mail className="w-5 h-5" />
                   <span>Get In Touch</span>
                 </a>
@@ -167,7 +167,7 @@ const Home = () => {
                     I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open.
                 </p>
                 <div className="flex flex-wrap justify-center gap-6">
-                    <a href="mailto:arvindelarosa@gmail.com" className="btn btn-primary !px-10 !py-4 text-lg">
+                    <a href="https://web.facebook.com/arvin.delarosa.338/" target="_blank" rel="noopener noreferrer" className="btn btn-primary !px-10 !py-4 text-lg">
                         Start a Conversation
                     </a>
                     <div className="flex gap-4">

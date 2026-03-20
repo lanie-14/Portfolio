@@ -56,7 +56,7 @@ const Layout = () => {
                   {link.label}
                 </Link>
               ))}
-              <a href="#contact" className="btn btn-primary !py-2 !px-5 text-sm">
+              <a href="https://web.facebook.com/arvin.delarosa.338/" target="_blank" rel="noopener noreferrer" className="btn btn-primary !py-2 !px-5 text-sm">
                 Let's Chat
               </a>
             </div>
@@ -83,7 +83,7 @@ const Layout = () => {
                 {link.label}
               </Link>
             ))}
-            <a href="#contact" className="btn btn-primary w-full">
+            <a href="https://web.facebook.com/arvin.delarosa.338/" target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full">
               Get In Touch
             </a>
           </div>
