@@ -19,14 +19,14 @@ const Layout = () => {
       {/* Navigation */}
       <nav className="border-b border-slate-100 sticky top-0 bg-white/80 backdrop-blur-sm z-50">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link to="/" className="font-bold text-lg tracking-tight text-rose-600">Kyla Mae Dela Cruz</Link>
+          <Link to="/" className="font-bold text-lg tracking-tight text-blue-600">Denver Marasigan</Link>
           
           <div className="hidden md:flex gap-8">
             {navLinks.map((link) => (
               <Link 
                 key={link.path} 
                 to={link.path} 
-                className={`text-sm font-medium hover:text-rose-600 transition-colors ${location.pathname === link.path ? 'text-rose-600' : 'text-slate-500'}`}
+                className={`text-sm font-medium hover:text-blue-600 transition-colors ${location.pathname === link.path ? 'text-blue-600' : 'text-slate-500'}`}
               >
                 {link.label}
               </Link>
@@ -58,7 +58,7 @@ const Layout = () => {
       {/* Footer */}
       <footer className="border-t border-slate-100 py-10">
         <div className="max-w-5xl mx-auto px-6 text-center text-slate-400 text-xs">
-           <p>&copy; {new Date().getFullYear()} Kyla Mae Dela Cruz. All rights reserved.</p>
+           <p>&copy; {new Date().getFullYear()} Denver Marasigan. All rights reserved.</p>
         </div>
       </footer>
     </div>
