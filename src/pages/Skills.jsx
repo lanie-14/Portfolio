@@ -1,144 +1,82 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Code2, Grid3X3, Code, Layers, Wrench, Users, Terminal, Braces, FileCode, Database, Coffee, Cpu, Server, Palette, LayoutGrid, GitBranch, Github, Figma, Users2, MessageCircle, ClipboardList, Lightbulb, Handshake, Clock, Folder, Mail, Zap, Layout, Monitor, Shield, Box, Rocket, Trophy } from 'lucide-react'
+import React from 'react'
+import { Layout, PenTool, Zap, Code2 } from 'lucide-react'
 
 const Skills = () => {
-  const [filter, setFilter] = useState('all')
-
-  useEffect(() => {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in, .slide-up, .scale-in').forEach(el => {
-        observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, [filter]);
-
-  const categories = [
-    { id: 'all', label: 'All Skills', icon: Grid3X3 },
-    { id: 'programming', label: 'Programming', icon: Code },
-    { id: 'database', label: 'Database', icon: Database },
-    { id: 'multimedia', label: 'Multimedia', icon: Palette }
-  ]
-
-  const skillsData = [
-    { id: 1, category: 'programming', title: 'CSS', level: 85, label: 'Advanced', icon: Layout, color: 'indigo' },
-    { id: 2, category: 'programming', title: 'JavaScript', level: 80, label: 'Advanced', icon: Braces, color: 'cyan' },
-    { id: 3, category: 'programming', title: 'Python', level: 70, label: 'Intermediate', icon: Terminal, color: 'rose' },
-    { id: 4, category: 'programming', title: 'Laravel', level: 75, label: 'Intermediate', icon: FileCode, color: 'indigo' },
-    { id: 5, category: 'database', title: 'MySQL', level: 80, label: 'Advanced', icon: Database, color: 'cyan' },
-    { id: 6, category: 'multimedia', title: 'OBS Studio', level: 85, label: 'Advanced', icon: Monitor, color: 'rose' }
-  ]
-
-  const filteredSkills = filter === 'all' 
-    ? skillsData 
-    : skillsData.filter(skill => skill.category === filter)
+  const design = ['Figma', 'Adobe XD', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems']
+  const code = ['HTML5', 'CSS / Sass', 'React.js', 'Tailwind CSS', 'Responsive Layouts', 'Git Version Control']
 
   return (
-    <div className="pt-32 pb-24 overflow-hidden min-h-screen">
-      <div className="container-custom">
-        {/* Header */}
-        <div className="max-w-4xl mb-20 fade-in">
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6 border-cyan-500/20">
-            <Shield className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm font-bold tracking-widest text-cyan-100 uppercase">Capabilities Matrix</span>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-headline font-black text-white mb-8">
-            TECH <span className="text-gradient">STACK</span> & ARSENAL
-          </h1>
-          <p className="text-xl text-slate-400 leading-relaxed max-w-2xl">
-            A diverse toolkit built through years of organizational leadership and technical exploration.
+    <div className="py-20 lg:py-32">
+      <div className="max-w-5xl mx-auto px-6">
+        
+        <div className="mb-20 text-right">
+          <h1 className="text-4xl md:text-6xl font-black text-stone-900 mb-6">Tools of the Trade</h1>
+          <p className="text-xl text-stone-500 max-w-2xl ml-auto">
+            My skill set bridges the visual world of design and the structural realm of front-end development.
           </p>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-4 mb-20 fade-in">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setFilter(cat.id)}
-              className={`flex items-center gap-3 px-6 py-3 rounded-2xl font-bold transition-all duration-500 border-white/5 ${
-                filter === cat.id 
-                ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 -translate-y-1' 
-                : 'glass text-slate-400 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              <cat.icon className={`w-5 h-5 ${filter === cat.id ? 'text-white' : 'text-slate-500'}`} />
-              <span>{cat.label}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredSkills.map((skill, index) => (
-            <SkillBlock key={skill.id} skill={skill} index={index} />
-          ))}
-        </div>
-
-        {/* Learning section */}
-        <section className="mt-32 bg-slate-900 border border-slate-700 rounded-lg p-12 relative overflow-hidden group">
-            <div className="flex flex-col md:flex-row items-center gap-12 relative z-10">
-                <div className="w-24 h-24 bg-indigo-500 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-                    <Rocket className="w-12 h-12 text-white fill-current" />
+        {/* Development Skills Left, Design Skills right */}
+        <div className="grid md:grid-cols-2 gap-12">
+          
+          {/* Development Skills */}
+          <div className="bg-stone-900 rounded-3xl p-10 relative overflow-hidden group">
+             <div className="absolute -bottom-10 -left-10 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Code2 className="w-40 h-40 text-stone-100" />
+             </div>
+             <div className="flex flex-row-reverse text-right items-center gap-4 mb-8">
+                <div className="w-14 h-14 bg-stone-800 rounded-2xl flex items-center justify-center text-white shadow-sm relative z-10">
+                   <Code2 className="w-6 h-6" />
                 </div>
-                <div className="text-center md:text-left flex-1">
-                    <h3 className="text-white text-3xl font-bold mb-4 italic tracking-tight">Currently Learning: Next.js & Advanced AI Integration</h3>
-                    <p className="text-slate-400 text-lg leading-relaxed max-w-3xl">
-                        I'm constantly pushing my boundaries by exploring new technologies and modern frameworks. My current focus is on mastering full-stack capabilities with Next.js and exploring how AI can streamline complex organizational workflows.
-                    </p>
+                <h2 className="text-2xl font-bold text-white relative z-10">Frontend Dev</h2>
+             </div>
+             
+             <ul className="space-y-4 relative z-10">
+                {code.map((skill, index) => (
+                   <li key={index} className="flex flex-col gap-2">
+                      <div className="flex flex-row-reverse justify-between items-center text-stone-300 font-bold text-right">
+                         <span>{skill}</span>
+                         <Zap className="w-4 h-4 text-stone-500" />
+                      </div>
+                      <div className="w-full bg-stone-800 h-2 rounded-full overflow-hidden flex justify-end">
+                         <div className="bg-stone-400 w-3/4 h-full rounded-full"></div>
+                      </div>
+                   </li>
+                ))}
+             </ul>
+          </div>
+
+          {/* Design Skills */}
+          <div className="bg-rose-50 rounded-3xl p-10 relative overflow-hidden group">
+             <div className="absolute -top-10 -left-10 opacity-20 group-hover:opacity-40 transition-opacity">
+                <PenTool className="w-40 h-40 text-rose-300" />
+             </div>
+             <div className="flex items-center gap-4 mb-8">
+                <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-rose-600 shadow-sm relative z-10">
+                   <Layout className="w-6 h-6" />
                 </div>
-                <Link to="/contact" className="btn btn-primary whitespace-nowrap">
-                   Partner Up
-                </Link>
-            </div>
-        </section>
+                <h2 className="text-2xl font-bold text-stone-900 relative z-10">UI/UX Design</h2>
+             </div>
+             
+             <ul className="space-y-4 relative z-10">
+                {design.map((skill, index) => (
+                   <li key={index} className="flex flex-col gap-2">
+                      <div className="flex justify-between items-center text-stone-700 font-bold">
+                         <span>{skill}</span>
+                         <Zap className="w-4 h-4 text-rose-400" />
+                      </div>
+                      <div className="w-full bg-rose-200 h-2 rounded-full overflow-hidden">
+                         <div className="bg-rose-500 w-4/5 h-full rounded-full"></div>
+                      </div>
+                   </li>
+                ))}
+             </ul>
+          </div>
+
+        </div>
       </div>
     </div>
   )
 }
-
-const SkillBlock = ({ skill, index }) => (
-  <div className={`bg-slate-900 border-2 border-slate-700 rounded-lg p-6 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800`}>
-    <div className="flex items-center gap-4 mb-8">
-      <div className={`w-12 h-12 bg-${skill.color}-500 rounded-md flex items-center justify-center`}>
-        <skill.icon className="w-6 h-6 text-white" />
-      </div>
-      <div className="flex-1">
-        <h3 className="text-lg font-bold text-white uppercase tracking-tight">{skill.title}</h3>
-        <span className="text-xs font-bold uppercase tracking-widest text-slate-500">{skill.label}</span>
-      </div>
-    </div>
-    
-    <div className="space-y-3">
-        <div className="flex justify-between items-center">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Proficiency</span>
-            <span className="text-white font-bold">{skill.level}%</span>
-        </div>
-        <div className="skill-bar">
-            {/* Using inline styles for dynamic width which isn't easy with pure tailwind without JIT for arbitrary values from data */}
-            <div 
-                className="skill-progress" 
-                style={{ 
-                    width: `${skill.level}%`,
-                    background: `linear-gradient(to right, #6366f1, #06b6d4)`
-                }}
-            ></div>
-        </div>
-    </div>
-  </div>
-)
 
 export default Skills
