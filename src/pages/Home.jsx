@@ -1,52 +1,57 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Code2, ArrowRight } from 'lucide-react'
+import { ArrowUpRight, Zap, Ghost, Eye } from 'lucide-react'
 
 const Home = () => {
-  const profileImage = "/images/profile.png" // Pointing to public/images/profile.png
-
   return (
-    <div className="relative">
-      {/* Soft Background Glows */}
-      <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
-      
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-        <div className="flex-1 max-w-2xl order-2 md:order-1">
-          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-3 py-1 rounded-full mb-8 text-xs font-bold uppercase tracking-widest border border-blue-100">
-             <Code2 size={14} /> Available for Work
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1]">
-             Building <span className="text-blue-400">meaningful</span> web experiences.
-          </h1>
-          
-          <p className="text-xl text-slate-500 mb-12 leading-relaxed max-w-xl">
-             Hi, I'm <span className="text-blue-900 font-semibold">Denver Marasigan</span>. I'm a developer specializing in building clean, minimalist, and user-friendly applications from the Philippines.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4">
-             <Link to="/projects" className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/10 active:scale-95">
-                Explore Projects <ArrowRight size={18} />
-             </Link>
-             <Link to="/about" className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all active:scale-95">
-                About Me
-             </Link>
-          </div>
-        </div>
+    <div className="min-h-[70vh] flex flex-col items-center justify-center relative overflow-hidden">
+      {/* Decorative Blur Spheres */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-100 rounded-full blur-[140px] -z-10 opacity-60 animate-pulse"></div>
+      <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-indigo-100 rounded-full blur-[120px] -z-10 opacity-60"></div>
 
-        {/* Profile Image Section */}
-        <div className="flex-shrink-0 order-1 md:order-2">
-           <div className="relative">
-              <div className="absolute inset-0 bg-blue-100 rounded-[2.5rem] rotate-3 -z-10 opacity-50"></div>
-              <div className="w-64 h-80 overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
-                <img 
-                  src={profileImage} 
-                  alt="Denver Marasigan Profile" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-           </div>
-        </div>
+      <div className="max-w-4xl w-full text-center reveal-left">
+         <div className="inline-block p-1 bg-slate-100 rounded-full mb-10 border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-3 px-6 py-2 bg-white rounded-full">
+               <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-600"></span>
+               </span>
+               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600">Lanibel Cabrera • Digital Craft</span>
+            </div>
+         </div>
+
+         <h1 className="text-7xl md:text-9xl font-black text-slate-900 leading-[0.88] tracking-tighter mb-10 translate-x-[-2px]">
+            HELLO.<br />
+            <span className="text-violet-600 italic font-serif">READY TO</span><br />
+            BUILD?
+         </h1>
+
+         <p className="text-lg md:text-2xl text-slate-500 font-medium max-w-2xl mx-auto mb-16 leading-relaxed">
+            I am <span className="text-slate-900 font-black italic underline decoration-violet-100 decoration-wavy underline-offset-4">Lanibel Cabrera</span>. A designer and developer delivering immersive digital experiences that leave a lasting mark.
+         </p>
+
+         <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link to="/projects" className="bg-slate-900 text-white px-12 py-6 rounded-3xl font-black uppercase tracking-widest text-[11px] border-4 border-white shadow-2xl shadow-indigo-900/10 hover:bg-violet-600 transition-all flex items-center justify-center gap-3 group active:scale-95">
+               View My Work <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </Link>
+            <Link to="/about" className="bg-white/80 backdrop-blur-md text-slate-900 px-12 py-6 rounded-3xl font-black uppercase tracking-widest text-[11px] border border-slate-100 shadow-xl hover:bg-slate-50 transition-all flex items-center justify-center gap-3 active:scale-95">
+               The Whole Story <Ghost size={18} className="text-violet-400" />
+            </Link>
+         </div>
+      </div>
+
+      {/* Floating Dynamic Cards */}
+      <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 space-y-6 reveal-right">
+         <div className="w-40 h-40 bg-white rounded-[3rem] shadow-2xl shadow-indigo-900/5 rotate-6 p-6 flex items-center justify-center floating">
+            <Zap size={40} className="text-yellow-400 fill-yellow-400" />
+         </div>
+         <div className="w-48 h-48 bg-violet-600 rounded-[3rem] shadow-2xl shadow-violet-600/20 -rotate-3 p-8 flex flex-col justify-end text-white floating" style={{animationDelay: '1s'}}>
+            <p className="text-[10px] font-black uppercase tracking-widest opacity-60 mb-2">Role</p>
+            <p className="font-black italic text-xl">DEV & DESIGN</p>
+         </div>
+         <div className="w-32 h-32 bg-indigo-900 rounded-[3rem] shadow-2xl p-6 flex items-center justify-center floating" style={{animationDelay: '2s'}}>
+            <Eye size={32} className="text-indigo-200" />
+         </div>
       </div>
     </div>
   )
