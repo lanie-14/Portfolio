@@ -1,78 +1,44 @@
 import React from 'react'
-import { Sparkles, MapPin, Coffee, GraduationCap } from 'lucide-react'
+import { Sparkles, MapPin, Mail, Coffee } from 'lucide-react'
 
 const About = () => {
   return (
-    <div className="py-20 lg:py-32">
-      <div className="max-w-4xl mx-auto px-6">
-        
-        <header className="mb-16 text-center">
-            <h1 className="text-4xl md:text-6xl font-black text-stone-900 mb-6">Behind the Screen</h1>
-            <p className="text-xl text-stone-500 max-w-2xl mx-auto">
-              I'm Kyla Mae Dela Cruz, a creative thinker obsessed with solving problems through empathetic design.
+    <div className="max-w-4xl">
+      <div className="grid md:grid-cols-3 gap-16 items-start">
+        <div className="md:col-span-2">
+          <h1 className="text-4xl font-bold text-slate-900 mb-8 border-b border-rose-100 pb-4 text-rose-600 font-serif italic">My Story</h1>
+          <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
+            <p>
+              I am Kyla Mae Dela Cruz, a web developer with a passion for building user-centric digital environments. My philosophy is that technology should be simple to use and visually satisfying.
             </p>
-        </header>
-
-        {/* Swapped order: Info Cards Left, My Story Right */}
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          
-          <div className="space-y-6">
-             {/* Mini Info Card 1 */}
-             <div className="bg-white rounded-2xl p-6 border border-stone-100 shadow-sm flex items-center flex-row-reverse text-right gap-4">
-                <div className="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center text-stone-600">
-                   <MapPin className="w-6 h-6" />
-                </div>
-                <div>
-                   <h3 className="font-bold text-stone-900">Current Base</h3>
-                   <p className="text-stone-500">Working remotely from the Philippines</p>
-                </div>
-             </div>
-
-             {/* Mini Info Card 2 */}
-             <div className="bg-white rounded-2xl p-6 border border-stone-100 shadow-sm flex items-center flex-row-reverse text-right gap-4">
-                <div className="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center text-stone-600">
-                   <GraduationCap className="w-6 h-6" />
-                </div>
-                <div>
-                   <h3 className="font-bold text-stone-900">Education Background</h3>
-                   <p className="text-stone-500">Bachelor of Science in Information Technology</p>
-                </div>
-             </div>
-
-             {/* Mini Info Card 3 */}
-             <div className="bg-stone-900 rounded-2xl p-6 border border-stone-800 shadow-md flex items-center flex-row-reverse text-right gap-4 text-white">
-                <div className="w-12 h-12 bg-rose-600 rounded-xl flex items-center justify-center">
-                   <Coffee className="w-6 h-6" />
-                </div>
-                <div>
-                   <h3 className="font-bold text-white">Fuel Source</h3>
-                   <p className="text-stone-300">Iced Lattes and ambient music playlists</p>
-                </div>
-             </div>
+            <p>
+              My journey started with a deep interest in how design can make people's lives easier. Since then, I’ve been constantly refining my craft, focusing on modern tools like React and Tailwind CSS.
+            </p>
+            <p>
+              I believe that communication and empathy are just as important as code. Understanding the user's needs is my top priority.
+            </p>
           </div>
-
-          <div className="bg-white rounded-3xl p-8 border border-stone-100 shadow-sm">
-            <div className="flex flex-row-reverse text-right items-center gap-4 mb-8 pb-8 border-b border-stone-100">
-               <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center text-rose-600">
-                  <Sparkles className="w-8 h-8" />
-               </div>
-               <div>
-                 <h2 className="text-2xl font-bold text-stone-900">My Story</h2>
-                 <p className="text-stone-400 font-medium">Design & Development</p>
-               </div>
-            </div>
-            <div className="space-y-6 text-stone-600 text-right leading-relaxed text-lg">
-              <p>
-                My passion for UI/UX Design began when I noticed how often we struggle with poorly designed software. I realized that code is powerful, but design is how people experience that power.
-              </p>
-              <p>
-                Over the past years, I've transitioned from being just a coder into someone who designs with psychology and human empathy in mind. This allows me to craft products that aren't just functional, but an absolute joy to use.
-              </p>
-            </div>
-          </div>
-
         </div>
 
+        <aside className="space-y-8">
+           <div className="bg-rose-50 p-8 rounded-2xl border border-rose-100">
+              <h3 className="text-xs font-black text-rose-400 uppercase tracking-widest mb-8">Details</h3>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4 text-sm font-medium text-slate-700">
+                  <MapPin size={18} className="text-rose-400" /> Philippines
+                </div>
+                <div className="flex items-center gap-4 text-sm font-medium text-slate-700">
+                  <Mail size={18} className="text-rose-400" /> kyla.mae@example.com
+                </div>
+                <div className="flex items-center gap-4 text-sm font-medium text-slate-700">
+                  <Sparkles size={18} className="text-rose-400" /> Freelance Available
+                </div>
+                <div className="flex items-center gap-4 text-sm font-medium text-slate-700 pt-6 border-t border-rose-200">
+                  <Coffee size={18} className="text-rose-400" /> Tea & Code
+                </div>
+              </div>
+           </div>
+        </aside>
       </div>
     </div>
   )
