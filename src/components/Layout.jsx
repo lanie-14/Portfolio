@@ -62,7 +62,7 @@ const Layout = () => {
             </div>
 
             {/* Mobile Menu Toggle */}
-            <button 
+            <button
               className="md:hidden p-2 text-slate-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -154,9 +154,9 @@ const Layout = () => {
 }
 
 const SocialIcon = ({ icon: Icon, href }) => (
-  <a 
-    href={href} 
-    target="_blank" 
+  <a
+    href={href}
+    target="_blank"
     rel="noopener noreferrer"
     className="w-10 h-10 glass-light rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-indigo-600/20 hover:border-indigo-500/50 transition-all"
   >
